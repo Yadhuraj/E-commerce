@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-18T20:42:27 IST" name="Suite" finished-at="2024-05-18T20:44:15 IST" duration-ms="108277">
+    <groups>
+    </groups>
+    <test started-at="2024-05-18T20:42:27 IST" name="Test" finished-at="2024-05-18T20:44:15 IST" duration-ms="108277">
+      <class name="com.yadhu.tests.CheckoutPage">
+        <test-method is-config="true" signature="beforeTestSetup()[pri:0, instance:com.yadhu.tests.CheckoutPage@59402b8f]" started-at="2024-05-18T20:42:27 IST" name="beforeTestSetup" finished-at="2024-05-18T20:42:37 IST" duration-ms="9873" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method signature="AddToCart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.yadhu.tests.CheckoutPage@59402b8f]" started-at="2024-05-18T20:42:37 IST" name="AddToCart" data-provider="billingInfo" finished-at="2024-05-18T20:44:15 IST" duration-ms="97874" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[rahulNammSuna@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ramu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Kaka]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[ SAI HARSHA RESIDENCY, NORTHPET,SATHYAMANGALAM]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[KERALA]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[638401]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[9000000000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddToCart -->
+      </class> <!-- com.yadhu.tests.CheckoutPage -->
+      <class name="com.yadhu.tests.LoginTest">
+        <test-method is-config="true" signature="beforeTestSetup()[pri:0, instance:com.yadhu.tests.LoginTest@4d1c005e]" started-at="2024-05-18T20:42:27 IST" name="beforeTestSetup" finished-at="2024-05-18T20:43:02 IST" duration-ms="35265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSetup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:com.yadhu.tests.LoginTest@4d1c005e]" started-at="2024-05-18T20:43:02 IST" name="loginTest" data-provider="logindata" finished-at="2024-05-18T20:43:43 IST" duration-ms="40529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ravi@dhiyotech.in]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:1, instance:com.yadhu.tests.LoginTest@4d1c005e]" started-at="2024-05-18T20:43:43 IST" name="loginTest" data-provider="logindata" finished-at="2024-05-18T20:43:58 IST" duration-ms="15576" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[infotek@solutions.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demo12]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id ='navbarText']//ul//li[2]//button' (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@id ='navbarText']//ul//li[2]//button' (tried for 5 second(s) with 500 milliseconds interval)
+at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+at com.yadhu.tests.LoginTest.loginTest(LoginTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.yadhu.tests.LoginTest@4d1c005e]" started-at="2024-05-18T20:44:15 IST" name="afterTest" finished-at="2024-05-18T20:44:15 IST" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.yadhu.tests.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

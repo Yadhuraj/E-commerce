@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+	<listeners>
+		<listener class-name="com.yadhu.utilities.TestListeners"></listener>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.yadhu.tests.LoginTest" />
+			<class name="com.yadhu.tests.CheckoutPage" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
